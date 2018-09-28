@@ -1,11 +1,39 @@
+<!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <title>TD2</title>
 </head>
 <body>
-	<form action="script.php" method="post">
-		Nom : <input type="text" name="username"><br/>
-		Email : <input type="text" name="email"/><br/>
-		<input type="submit" name="submit" value="Entrer"/>
-	</form>
+    <!-- EXERCICE
+        <form action="script.php" method="post">
+        Nom : <input type="text" name="username"><br />
+        Email : <input type="text" name="email" /><br />
+
+        <b>Ne pas remplir : </b>
+        <input type="hidden" name="Cache" value="mt_rand(min,max)">
+        <br />
+        <b>Vous êtes : </b>
+        <select name="liste">
+            <option value="enfant">enfant</option>
+            <option value="ado">ado</option>
+            <option value="adulte">adulte</option>
+        </select><br />
+        <br />
+        <b>Vous êtes :</b><br />
+        <input type="radio" name="typeradio" value="etudiant">etudiant<br />
+        <input type="radio" name="typeradio" value="actif">vie active<br />
+
+
+        <input type="submit" name="submit" value="Entrer" />
+    </form>
+        -->
+    <!-- EXERCIE 2-->
+   <?php  $nombre=50; ?>
+    <form action="TD2EX2.php" method="post">
+        <input type="hidden" name="nbGagnant" value="<?php echo $nombre; ?>">
+        ENTRER UN NOMBRE : <input type="text" name="nombre" /><br />
+        <input type="submit" name="submit" value="Entrer" />
+    </form>
 </body>
 </html>

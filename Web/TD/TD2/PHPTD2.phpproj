@@ -16,6 +16,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="index.html" />
+    <Compile Include="index.php" />
     <Compile Include="script.php" />
+    <Compile Include="TD2EX2.php" />
   </ItemGroup>
 </Project>
