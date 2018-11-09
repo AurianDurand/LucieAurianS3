@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A0786B88-2ADB-4C21-ABE8-AA2D79766269}") = "td4_ex2", "..\..\..\..\Users\ad731784\Desktop\td4_ex2\td4_ex2\td4_ex2.phpproj", "{CB79629C-1819-4C8C-8F45-96E9ABED8F03}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CB79629C-1819-4C8C-8F45-96E9ABED8F03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB79629C-1819-4C8C-8F45-96E9ABED8F03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5491D1E8-B3E2-47E8-A659-EF62CE5E5EF1}
+	EndGlobalSection
+EndGlobal
