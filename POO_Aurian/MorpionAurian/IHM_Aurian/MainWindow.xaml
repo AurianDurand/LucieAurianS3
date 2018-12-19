@@ -1,0 +1,42 @@
+﻿<Window x:Class="IHM_Aurian.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IHM_Aurian"
+        mc:Ignorable="d"
+        Title="Morpion Aurian" Height="451.5" Width="593">
+    <Grid Margin="0,0,2,0">
+        <Rectangle HorizontalAlignment="Left" Height="362" Margin="10,51,0,0" VerticalAlignment="Top" Width="366" Fill="#FFABABAD"/>
+
+        <Rectangle HorizontalAlignment="Left" Height="36" Margin="10,10,0,0" VerticalAlignment="Top" Width="563" Fill="#FFABABAD"/>
+
+        <Label x:Name="Lb1" Content="Joueur1" HorizontalAlignment="Left" Margin="24,16,0,0" VerticalAlignment="Top" Width="56" Height="27"/>
+        <Label x:Name="Lb2" Content="Joueur2&#xA;&#xA;" HorizontalAlignment="Left" Margin="218,16,0,0" VerticalAlignment="Top" Width="56" Height="27"/>
+        <TextBox x:Name="TBoxNom1" HorizontalAlignment="Left" Height="23" Margin="84,16,0,0" TextWrapping="Wrap" Text="{Binding Nom1}" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TBoxNom2" HorizontalAlignment="Left" Height="23" Margin="280,16,0,0" TextWrapping="Wrap" Text="{Binding Nom2}" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="buttonJouer" Content="Jouer" HorizontalAlignment="Left" Margin="431,16,0,0" VerticalAlignment="Top" Width="112" Click="Button_Click" RenderTransformOrigin="0.152,0.612"/>
+        <Rectangle HorizontalAlignment="Left" Height="362" Margin="381,51,0,0" VerticalAlignment="Top" Width="192" Fill="#FFABABAD"/>
+        <Image x:Name="Image0" HorizontalAlignment="Left" Height="100" Margin="24,67,0,0" VerticalAlignment="Top" Width="100" Source="Assets/carreBlanc.png" MouseLeftButtonUp="Image0_MouseLeftButtonUp"/>
+        <Image x:Name="Image1" HorizontalAlignment="Left" Height="100" Margin="141,67,0,0" VerticalAlignment="Top" Width="100" Source="Assets/carreBlanc.png" MouseLeftButtonUp="Image1_MouseLeftButtonUp"/>
+        <Image x:Name="Image2" HorizontalAlignment="Left" Height="100" Margin="258,67,0,0" VerticalAlignment="Top" Width="100" Source="Assets/carreBlanc.png" MouseLeftButtonUp="Image2_MouseLeftButtonUp"/>
+        <Image x:Name="Image3" HorizontalAlignment="Left" Height="100" Margin="24,182,0,0" VerticalAlignment="Top" Width="100" Source="Assets/carreBlanc.png" MouseLeftButtonUp="Image3_MouseLeftButtonUp"/>
+        <Image x:Name="Image4" HorizontalAlignment="Left" Height="100" Margin="141,182,0,0" VerticalAlignment="Top" Width="100" Source="Assets/carreBlanc.png" MouseLeftButtonUp="Image4_MouseLeftButtonUp"/>
+        <Image x:Name="Image5" HorizontalAlignment="Left" Height="100" Margin="258,182,0,0" VerticalAlignment="Top" Width="100" Source="Assets/carreBlanc.png" MouseLeftButtonUp="Image5_MouseLeftButtonUp"/>
+        <Image x:Name="Image7" HorizontalAlignment="Left" Height="100" Margin="141,297,0,0" VerticalAlignment="Top" Width="100" Source="Assets/carreBlanc.png" MouseLeftButtonUp="Image7_MouseLeftButtonUp"/>
+        <Image x:Name="Image6" HorizontalAlignment="Left" Height="100" Margin="24,297,0,0" VerticalAlignment="Top" Width="100" Source="Assets/carreBlanc.png" MouseLeftButtonUp="Image6_MouseLeftButtonUp"/>
+        <Image x:Name="Image8" HorizontalAlignment="Left" Height="100" Margin="258,297,0,0" VerticalAlignment="Top" Width="100" Source="Assets/carreBlanc.png" MouseLeftButtonUp="Image8_MouseLeftButtonUp"/>
+        <Grid HorizontalAlignment="Left" Height="467" Margin="10,51,0,0" VerticalAlignment="Top" Width="366" RenderTransformOrigin="0.5,0.5"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="330" Margin="396,67,0,0" Stroke="Black" VerticalAlignment="Top" Width="159" StrokeThickness="0"/>
+        <Label x:Name="histo1" Content="" HorizontalAlignment="Left" Margin="409,86,0,0" VerticalAlignment="Top" Width="134"/>
+        <Label x:Name="histo2" Content="" HorizontalAlignment="Left" Margin="409,117,0,0" VerticalAlignment="Top" Width="134"/>
+        <Label x:Name="histo3" Content="" HorizontalAlignment="Left" Margin="409,148,0,0" VerticalAlignment="Top" Width="134"/>
+        <Label x:Name="histo4" Content="" HorizontalAlignment="Left" Margin="409,179,0,0" VerticalAlignment="Top" Width="134"/>
+        <Label x:Name="histo5" Content="" HorizontalAlignment="Left" Margin="409,210,0,0" VerticalAlignment="Top" Width="134"/>
+        <Label x:Name="histo6" Content="" HorizontalAlignment="Left" Margin="409,241,0,0" VerticalAlignment="Top" Width="134"/>
+        <Label x:Name="histo7" Content="" HorizontalAlignment="Left" Margin="409,272,0,0" VerticalAlignment="Top" Width="134"/>
+        <Label x:Name="histo8" Content="" HorizontalAlignment="Left" Margin="409,303,0,0" VerticalAlignment="Top" Width="134"/>
+        <Label x:Name="histo9" Content="" HorizontalAlignment="Left" Margin="409,334,0,0" VerticalAlignment="Top" Width="134"/>
+
+    </Grid>
+</Window>

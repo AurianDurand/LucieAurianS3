@@ -1,0 +1,9 @@
+C:\Users\ad731784\Desktop\ad731784\Code\Metier_Aurian\bin\Debug\netstandard2.0\Metier_Aurian.deps.json
+C:\Users\ad731784\Desktop\ad731784\Code\Metier_Aurian\bin\Debug\netstandard2.0\Metier_Aurian.dll
+C:\Users\ad731784\Desktop\ad731784\Code\Metier_Aurian\bin\Debug\netstandard2.0\Metier_Aurian.pdb
+C:\Users\ad731784\Desktop\ad731784\Code\Metier_Aurian\obj\Debug\netstandard2.0\Metier_Aurian.csprojAssemblyReference.cache
+C:\Users\ad731784\Desktop\ad731784\Code\Metier_Aurian\obj\Debug\netstandard2.0\Metier_Aurian.csproj.CoreCompileInputs.cache
+C:\Users\ad731784\Desktop\ad731784\Code\Metier_Aurian\obj\Debug\netstandard2.0\Metier_Aurian.AssemblyInfoInputs.cache
+C:\Users\ad731784\Desktop\ad731784\Code\Metier_Aurian\obj\Debug\netstandard2.0\Metier_Aurian.AssemblyInfo.cs
+C:\Users\ad731784\Desktop\ad731784\Code\Metier_Aurian\obj\Debug\netstandard2.0\Metier_Aurian.dll
+C:\Users\ad731784\Desktop\ad731784\Code\Metier_Aurian\obj\Debug\netstandard2.0\Metier_Aurian.pdb
