@@ -110,6 +110,12 @@ namespace IHM_Aurian
                     image.Source = new BitmapImage(new Uri(@"/Assets/croix.jpg", UriKind.Relative));
                     //ensuite on génère l'historique
                     genererHistorique(x, y);
+
+                    //si le joueur2 est une IA et que l'on est pas au dernier tour 
+                    if (((this.morpion.Joueur2.Nom == "ia") || (this.morpion.Joueur2.Nom == "IA")) && (this.morpion.Tour < 9))
+                    {
+                        tourIA();
+                    }
                 }
 
                 //si le metier retourne 2, alors on dessine un rond
@@ -122,15 +128,71 @@ namespace IHM_Aurian
                 //si le metier retourne autre chose que 1 ou 2, alors on ne fait rien   
 
                 //ensuite, il faut vérifier si l'un des joueurs gagne, pour ce faire on va à nouveau demandé au métier d'agir
-
+                if(this.morpion.gagner() == 1)
+                {
+                    MessageBox.Show(this.morpion.Joueur1.Nom+" a gagné !");
+                }
+                else if(this.morpion.gagner() == 2)
+                {
+                    MessageBox.Show(this.morpion.Joueur2.Nom + " a gagné !");
+                }  
             }
+        }
+
+        /// <summary>
+        /// cette méthode récupère les coordonnées de la case choisie par l'IA, puis ensuite
+        /// recherche m'image associé à cette case et dessine un rond (car l'ia est le joueur2)
+        /// </summary>
+        private void tourIA()
+        {
+            StructCoo cooIA = this.morpion.choixIa();
+            if(cooIA.x == 0 && cooIA.y == 0)
+            {
+                Image0.Source = new BitmapImage(new Uri(@"/Assets/rond.jpg", UriKind.Relative));
+            }
+            else if (cooIA.x == 1 && cooIA.y == 0)
+            {
+                Image1.Source = new BitmapImage(new Uri(@"/Assets/rond.jpg", UriKind.Relative));
+            }
+            else if (cooIA.x == 2 && cooIA.y == 0)
+            {
+                Image2.Source = new BitmapImage(new Uri(@"/Assets/rond.jpg", UriKind.Relative));
+            }
+            else if (cooIA.x == 0 && cooIA.y == 1)
+            {
+                Image3.Source = new BitmapImage(new Uri(@"/Assets/rond.jpg", UriKind.Relative));
+            }
+            else if (cooIA.x == 1 && cooIA.y == 1)
+            {
+                Image4.Source = new BitmapImage(new Uri(@"/Assets/rond.jpg", UriKind.Relative));
+            }
+            else if (cooIA.x == 2 && cooIA.y == 1)
+            {
+                Image5.Source = new BitmapImage(new Uri(@"/Assets/rond.jpg", UriKind.Relative));
+            }
+            else if (cooIA.x == 0 && cooIA.y == 2)
+            {
+                Image6.Source = new BitmapImage(new Uri(@"/Assets/rond.jpg", UriKind.Relative));
+            }
+            else if (cooIA.x == 1 && cooIA.y == 2)
+            {
+                Image7.Source = new BitmapImage(new Uri(@"/Assets/rond.jpg", UriKind.Relative));
+            }
+            else if (cooIA.x == 2 && cooIA.y == 2)
+            {
+                Image8.Source = new BitmapImage(new Uri(@"/Assets/rond.jpg", UriKind.Relative));
+            }
+            //ensuite on génère l'historique
+            genererHistorique(cooIA.x, cooIA.y);
         }
 
         //cette méthode a pour but de réinitialiser la partie afin de pouvoir en faire une autre
         //cette fonctionnalité n'est pas fonctionnelle 
         private void resetPlateauJeu()
         {
+            this.morpion.recommancerPartie();
             Image0.Source=Image1.Source=Image2.Source=Image3.Source=Image4.Source=Image5.Source=Image6.Source=Image7.Source=Image8.Source= new BitmapImage(new Uri(@"/Assets/carreBlanc.png", UriKind.Relative));
+            histo1.Content = histo2.Content = histo3.Content = histo4.Content = histo5.Content = histo6.Content = histo7.Content = histo8.Content = histo9.Content = "";
         }
 
         //ces méthodes sont appellées lorsque l'on clique sur une image puis appellent imageGeneralFunction en transmétant leur coordonnées et elles mêmes

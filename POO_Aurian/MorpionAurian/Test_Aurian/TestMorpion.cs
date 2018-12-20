@@ -50,5 +50,33 @@ namespace Test_Aurian
             Assert.AreEqual(0, morpion.cocherCase(0,0));
             Assert.AreEqual(2, morpion.cocherCase(1,0));
         }
+
+        [TestMethod]
+        public void gagner()
+        {
+            Morpion morpion = new Morpion();
+            morpion.cocherCase(0, 0);
+            morpion.cocherCase(1, 0);
+            morpion.cocherCase(0, 1);
+            morpion.cocherCase(2, 0);
+            morpion.cocherCase(0, 2);
+            Assert.AreEqual(1, morpion.gagner());
+        }
+
+        [TestMethod]
+        public void recommancerPartie()
+        {
+            Morpion morpion = new Morpion();
+            morpion.saisieNomsJoueurs("a", "b");
+            morpion.recommancerPartie();
+            Assert.IsTrue(morpion.isJoueurCourantNotNull());
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    Assert.AreNotEqual(0, morpion.cocherCase(i, j));
+                }
+            }
+        }
     }
 }
